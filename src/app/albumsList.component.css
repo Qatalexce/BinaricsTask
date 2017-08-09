@@ -1,0 +1,85 @@
+#wrapper {
+    text-align: center;
+}
+
+.container-fluid {
+    display: inline-block;
+}
+
+
+
+.album-thumbnail-container {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    display: inline-block;
+}
+
+@media (max-width: 450px) {
+    .album-thumbnail-container {
+        height: 170px;
+        width: 170px;
+    }
+}
+
+@media (max-width: 360px) {
+    .album-thumbnail-container {
+        height: 160px;
+        width: 160px;
+    }
+}
+@media (max-width: 320px) {
+    .album-thumbnail-container {
+        height: 140px;
+        width: 140px;
+    }
+}
+
+
+
+.album-thumbnail-container > img {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    transition: 0.15s all ease-out;
+    border: 2px solid rgb(237, 237, 237);
+}
+
+.album-thumbnail-container:hover > img {
+    height: 72%;
+    width: 72%;
+}
+
+
+.album-thumbnail-one {
+    top: 25%;
+    left: 15%;
+    z-index: 3;
+}
+
+.album-thumbnail-container:hover > img.album-thumbnail-one {
+    top: 19%;
+    left: 9%;
+}
+
+.album-thumbnail-two {
+    top: 20%;
+    left: 20%;
+    z-index: 2;
+}
+
+.album-thumbnail-container:hover > img.album-thumbnail-two {
+    top: 14%;
+    left: 14%;
+}
+
+.album-thumbnail-three {
+    top: 15%;
+    left: 25%;
+    z-index: 1;
+}
+
+.album-thumbnail-container:hover > img.album-thumbnail-three {
+    top: 9%;
+    left: 19%;
+}

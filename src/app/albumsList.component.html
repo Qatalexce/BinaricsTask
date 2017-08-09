@@ -1,0 +1,9 @@
+<div id="wrapper">
+    <div class="container-fluid">
+        <div *ngFor="let album of albumsData; let i = index" (click)="albumSelected(i)" class="album-thumbnail-container">
+        <img class="album-thumbnail-one" src="{{album[0]?.thumbnailUrl}}">
+        <img class="album-thumbnail-two" src="{{album[1]?.thumbnailUrl}}">
+        <img class="album-thumbnail-three" src="{{album[2]?.thumbnailUrl}}">
+        </div>
+    </div>
+</div>

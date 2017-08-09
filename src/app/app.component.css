@@ -1,0 +1,36 @@
+#nav {
+    background-color:  rgba(255,255,255,0.93);
+    line-height: 50px;
+    height: 50px;
+    width: 100%;
+    display: block;
+}
+
+#nav > span{
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#nav > span::before {
+    font-size: 24px;
+    color: rgb(37, 40, 48);
+    
+}
+
+#title {
+    margin: 0 auto;
+    padding: 0;
+    font-weight: normal;
+    float: right;
+    line-height: 50px;
+    color: rgb(37, 40, 48);
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+@media (max-width: 450px) {
+    #title {
+        font-size: 20px;
+    }
+}

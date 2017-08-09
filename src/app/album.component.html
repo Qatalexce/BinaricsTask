@@ -1,0 +1,13 @@
+<div id="wrapper">
+    <div class="container-fluid">
+        <div *ngFor="let pic of currentPics" class="image-container">
+            <img class="image-preview" (click)="showImage(pic)" src="{{pic?.thumbnailUrl}}">
+        </div>
+    </div>
+</div>
+<div class="shade" *ngIf="isSelected" (click)="hideImage()">
+    <figure class="pic-large">
+        <img src="{{shownImage?.url}}">
+        <figcaption>{{shownImage?.title}}</figcaption>
+    </figure>
+</div>
